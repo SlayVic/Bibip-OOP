@@ -93,7 +93,8 @@ fn main() {
     let mut t = Triangle::new((3.0, 4.0, 5.0));
     t.print();
 
-    let pointer_to_func = Triangle::set_a; // по факту референс на функцію set_a, але но зовсім як у умові задачі, бо у расті немає показчиків на функції у потрібному вигляді
+    let pointer_to_func = Triangle::set_a;
+    // по факту це референс на функцію set_a, але но зовсім як у умові задачі, бо у расті немає показчиків на функції у потрібному вигляді
     let mut instance_pointer = &mut t as *mut Triangle;
     unsafe {
         pointer_to_func(&mut (*instance_pointer), 6.0);
