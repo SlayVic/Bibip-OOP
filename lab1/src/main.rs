@@ -40,6 +40,7 @@ impl Triangle {
     where
         A: IntoTriangle,
     {
+        println!("Call Triangle constructor");
         args.into()
     }
 
@@ -101,7 +102,7 @@ fn main() {
         (*instance_pointer).print();
     }
 
-    // кращім методом створення "показчика" на фукцію є closure
+    // кращім методом створення "показчика" на фукцію є closure, яким ми просто створюємо анонімну функцію, яка викликає потрібну нам функцію.
     let mut closure = |a| t.set_a(a);
     closure(7.0);
     t.print();
