@@ -95,7 +95,8 @@ fn main() {
     t.print();
 
     let pointer_to_func = Triangle::set_a;
-    // по факту це референс на функцію set_a, але но зовсім як у умові задачі, бо у расті немає показчиків на функції у потрібному вигляді
+    // по факту це референс на функцію set_a, але не зовсім як у умові задачі, бо у расті немає показчиків на функції у потрібному вигляді
+
     let mut instance_pointer = &mut t as *mut Triangle;
     unsafe {
         pointer_to_func(&mut (*instance_pointer), 6.0);
