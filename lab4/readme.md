@@ -13,8 +13,10 @@
 $$
 \begin{array}{|c|c|c|c|c|c|}
 \hline
-№ & \text{Data Type} & \text{Elements} & \text{even} & \text{odd} & \text{Equation}\\\hline
+№ & \text{Data Type} & \text{Elements} & \text{even} & \text{odd} & \text{Equation}\\ 
+\hline
 2 & \text{Int} & 8 & i+5 & i-5 & \text{Count odd elements}
-\\\hline
+\\ 
+\hline
 \end{array}
 $$
