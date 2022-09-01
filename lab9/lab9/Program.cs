@@ -24,11 +24,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
       Console.WriteLine("     " + (x switch
       {
         >= 0 => "positive",
-        < 0 => "negative"
+        < 0 => "negative",
+        _ => "WTF???"
       }));
     }
-
-    static double AreaOfSqueareTriangle(double a, double angle)
+    static double AreaOfSquareTriangle(double a, double angle)
     {
       return a * a * Math.Tan(angle * Math.PI / 180) / 2;
     }
@@ -55,7 +55,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
       double a = double.Parse(Console.ReadLine());
       Console.Write("Enter angle: ");
       double angle = double.Parse(Console.ReadLine());
-      Console.WriteLine("Area of a square triangle: {0}", AreaOfSqueareTriangle(a, angle));
+      Console.WriteLine("Area of a square triangle: {0}", AreaOfSquareTriangle(a, angle));
     }
   }
 }
