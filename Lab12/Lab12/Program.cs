@@ -10,15 +10,15 @@
     private double _z;
     public Vector3D(double x, double y, double z)
     {
-      X = x;
-      Y = y;
-      Z = z;
+      _x = x;
+      _y = y;
+      _z = z;
     }
     public Vector3D()
     {
-      X = 0;
-      Y = 0;
-      Z = 0;
+      _x = 0;
+      _y = 0;
+      _z = 0;
     }
 
     public double Length()
