@@ -120,22 +120,22 @@
 
       Vector3D v1 = new Vector3D(1, 2, 3);
       Vector3D v2 = new Vector3D(4, 5, 6);
-      Console.WriteLine(v1);
-      Console.WriteLine(v2);
-      Console.WriteLine(v1 + v2);
-      Console.WriteLine(v1 - v2);
-      Console.WriteLine(v1 * 2);
-      Console.WriteLine(v1 / 2);
-      Console.WriteLine(v1 * v2);
-      Console.WriteLine(v1.Length());
-      Console.WriteLine(v2.Length());
-      Console.WriteLine(v1.Equals(v2));
-      Console.WriteLine(v1 == v2);
-      Console.WriteLine(v1 != v2);
-      Console.WriteLine(v1 < v2);
-      Console.WriteLine(v1 > v2);
-      Console.WriteLine(v1 <= v2);
-      Console.WriteLine(v1 >= v2);
+      Console.WriteLine($"v1: {v1}");
+      Console.WriteLine($"v2: {v2}");
+      Console.WriteLine($"v1 + v2: {v1 + v2}");
+      Console.WriteLine($"v1 - v2: {v1 - v2}");
+      Console.WriteLine($"v1 * 2: {v1 * 2}");
+      Console.WriteLine($"v1 / 2: {v1 / 2}");
+      Console.WriteLine($"v1 * v2: {v1 * v2}");
+      Console.WriteLine($"v1.Length(): {v1.Length()}");
+      Console.WriteLine($"v2.Length(): {v2.Length()}");
+      Console.WriteLine($"v1.Equals(v2): {v1.Equals(v2)}");
+      Console.WriteLine($"v1 == v2: {v1 == v2}");
+      Console.WriteLine($"v1 != v2: {v1 != v2}");
+      Console.WriteLine($"v1 < v2: {v1 < v2}");
+      Console.WriteLine($"v1 > v2: {v1 > v2}");
+      Console.WriteLine($"v1 <= v2: {v1 <= v2}");
+      Console.WriteLine($"v1 >= v2: {v1 >= v2}");
     }
   }
 }
