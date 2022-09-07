@@ -27,16 +27,6 @@
     public delegate void myEventHandler();
     public event myEventHandler? SEvent;
     public event myEventHandler? EscEvent;
-    public void OnSEvent()
-    {
-      if (SEvent != null)
-        SEvent();
-    }
-    public void OnEscEvent()
-    {
-      if (EscEvent != null)
-        EscEvent();
-    }
 
     public MyEventClass()
     {
@@ -55,13 +45,12 @@
           switch (cki.Key)
           {
             case ConsoleKey.S:
-              SEvent();
+              SEvent?.Invoke();
               break;
             case ConsoleKey.Escape:
-              EscEvent();
+              EscEvent?.Invoke();
               break;
           }
-
         }
       });
     }
