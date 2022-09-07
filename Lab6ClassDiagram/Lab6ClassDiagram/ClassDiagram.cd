@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Person">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAAAAAAQAAAAAAAAAAAAAAEAABEIAAEAAAAAAA=</HashCode>
+      <FileName>Lab6ClassDiagram.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Servant">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQABEAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Lab6ClassDiagram.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Employee">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAAAAAAAAAAAIAACCAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lab6ClassDiagram.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Engineer">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAAAAACAAAAAAAIAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lab6ClassDiagram.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
