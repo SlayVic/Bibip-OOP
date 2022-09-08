@@ -14,7 +14,6 @@ namespace lab16
 
     public MyEventClass()
     {
-      SEvent += () => Console.WriteLine("\bShashkov Yaroslav");
       StartChecking();
     }
 
