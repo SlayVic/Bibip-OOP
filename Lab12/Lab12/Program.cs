@@ -14,12 +14,7 @@
       _y = y;
       _z = z;
     }
-    public Vector3D()
-    {
-      _x = 0;
-      _y = 0;
-      _z = 0;
-    }
+    public Vector3D() : this(0, 0, 0) => _ = 0;
 
     public double Length()
     {

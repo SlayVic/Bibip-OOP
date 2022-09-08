@@ -120,4 +120,24 @@ int main()
   std::cout << "   ++c1: " << c5 << std::endl;
   std::cout << "   --c1: " << c6 << std::endl;
   return 0;
+
+  int main()
+  {
+    float value;
+    cout << "\nSet the radius value: ";
+    cin >> value;
+
+    Sphere sp1 = Sphere();
+
+    Sphere sp2(value);
+    sp1.printValues();
+    sp2.printValues();
+
+    Sphere *sp1_ptr = &sp1;                // создаём указатель на екземпляр класса Sphere
+    void (Sphere::*set_radius_ptr)(float); // создаём указатель на метод setRadius
+    set_radius_ptr = &Sphere::setRadius;   // присваиваем ему адрес метода setRadius
+    (sp1_ptr->*set_radius_ptr)(50);        // вызываем метод setRadius через указатели с параметром 50
+    sp1_ptr->printValues();                // вызываем метод printValues через указатель на екземпляр класса Sphere
+    cout << "sp1.getRadius(): " << sp1.getRadius() << "\n";
+  }
 }
